@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    public function up()
+    public function up(): void
     {
         Schema::create('seo', function (Blueprint $table) {
             $table->id();
@@ -17,8 +17,14 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('image')->nullable();
             $table->string('author')->nullable();
+            $table->string('robots')->nullable();
 
             $table->timestamps();
         });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('seo');
     }
 };
