@@ -1,4 +1,4 @@
-# Laravel 10 產生開箱即用有效的中繼標記
+# Laravel 11 產生開箱即用有效的中繼標記
 
 引入 ralphjsmit 的 laravel-seo 套件來擴增產生開箱即用有效的中繼標記，網頁層級中繼標記是向搜尋引擎提供網站相關資訊的絕佳途徑。
 
@@ -26,5 +26,5 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/jL6bPBv.png)
+![](https://i.imgur.com/8pP8i2b.png)
 > 中繼標記可以用來提供資訊給各類用戶端，每一個系統都僅會處理它們理解的中繼標記，並忽略其他類型的標記

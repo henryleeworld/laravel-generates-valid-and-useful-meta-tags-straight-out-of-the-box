@@ -15,7 +15,7 @@ class PostController extends Controller
         $post = Post::find($postId);
 
         $post->seo->update([
-            'title' => '新竹客運9/12後不續營34條路線，衝擊桃竹苗民眾上學上班',
+            'title' => __('"Mobile Suit Gundam SEED"\'s latest theatrical animation "Mobile Suit Gundam SEED FREEDOM", the agent Medialink announced that it will be released in Taiwan on April 19.'),
             'image' => 'images/posts/1.jpg', // Will point to `public_path('images/posts/1.jpg')`
         ]);
         return view('post', ['post' => $post]);
